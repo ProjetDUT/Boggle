@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact</title>
+		<link rel="stylesheet" media="screen" type="text/css" href="../HTML/STYLES/formulaire.css"/>
+	</head>
+	<body>
+		<h1>Contactez-nous</h1>
+		<div class="contactez-nous">
+			<ul class="menu">
+				<li><a href="accueil.html">Accueil</a></li>
+				<li><a href="règlesjeu.html">Règles du jeu</a></li>
+				<li><a href="downloadjeu.html">Télécharger le jeu</a></li>
+				<li><a href="leaderboard.html">Leaderboard</a></li>
+				<li><a href="contact.html" class="actif">Contact</a></li>
+			</ul>
+			<p>
+				Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !
+			</p>
+			<form action="/page-traitement-donnees" method="post">
+				<div>
+					<label for="nom">Votre nom</label>
+					<input type="text" id="nom" name="nom" placeholder="Julien" required>
+				</div>
+				</br>
+				<div>
+					<label for="email">Votre e-mail</label>
+					<input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+				</div>
+				</br>
+				<div>
+					<label for="sujet">Quel est le sujet de votre message ?</label>
+					<select name="sujet" id="sujet" required>
+						<option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+						<option value="probleme-compte">Bugs</option>
+						<option value="question-produit">Problèmes Leaderboard</option>
+						<option value="suivi-commande">Téléchargement du Jeu</option>
+						<option value="autre">Autre...</option>
+					</select>
+				</div>
+				</br>
+				<div>
+					<label for="message">Votre message</label>
+					<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+				</div>
+				</br>
+				<div>
+					<button type="submit">Envoyer</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
