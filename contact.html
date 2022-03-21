@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<title>Contact</title>
-		<link rel="stylesheet" media="screen" type="text/css" href="formulaire.css"/>
+		<link rel="stylesheet" media="screen" type="text/css" href="../HTML/STYLES/formulaire.css"/>
 	</head>
 	<body>
-		<h1>Contactez-nous</h1>
+		<h1>CONTACT US</h1>
 		<div class="contactez-nous">
 			<ul class="menu">
-				<li><a href="accueil.html">Accueil</a></li>
-				<li><a href="règlesjeu.html">Règles du jeu</a></li>
-				<li><a href="downloadjeu.html">Télécharger le jeu</a></li>
+				<li><a href="accueil.html">Home</a></li>
+				<li><a href="règlesjeu.html">Rules of the game</a></li>
+				<li><a href="downloadjeu.html">Download the game</a></li>
 				<li><a href="leaderboard.html">Leaderboard</a></li>
 				<li><a href="contact.html" class="actif">Contact</a></li>
 			</ul>
 			<p>
-				Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !
+				<img src="../HTML/IMAGES/Logo.png" alt="logo iut" />
 			</p>
-			<form action="/page-traitement-donnees" method="post">
+			<p>
+				Do you have a problem, a question, or would you like to send us a message of love? Do not hesitate to use this form to contact us!
+				<br />
+			</p>
+			<form method="POST" action="traitement.html">																	<!-- Formulaire pour contacter le support -->
 				<div>
-					<label for="nom">Votre nom</label>
+					<label for="nom">Your name</label>																		<!-- Insertion du nom -->
 					<input type="text" id="nom" name="nom" placeholder="Julien" required>
+					<br />
 				</div>
-				</br>
 				<div>
-					<label for="email">Votre e-mail</label>
-					<input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+					<label for="email">Your e-mail address</label>															<!-- Adresse e-mail -->
+					<input type="email" id="email" name="email" placeholder="myadress@mail.com" required>
+					<br />
 				</div>
-				</br>
 				<div>
-					<label for="sujet">Quel est le sujet de votre message ?</label>
+					<label for="sujet">What is the subject of your message?</label>											<!-- Type de problèmes rencontrés, choisir parmis 4 propositions -->
 					<select name="sujet" id="sujet" required>
-						<option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-						<option value="probleme-compte">Bugs</option>
-						<option value="question-produit">Problèmes Leaderboard</option>
-						<option value="suivi-commande">Téléchargement du Jeu</option>
-						<option value="autre">Autre...</option>
+						<option value="" disabled selected hidden>Choose the subject of your message</option>
+						<option value="problèmes-bugs">Bugs</option>
+						<option value="Classement">Leaderboard problems</option>
+						<option value="Téléchargement">Download the Game</option>
+						<option value="autre">Other...</option>
 					</select>
 				</div>
-				</br>
+				<br />
 				<div>
-					<label for="message">Votre message</label>
-					<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+					<label for="message">Your message</label>															
+					<textarea id="message" name="message" placeholder="Hello, I am contacting you because ...." required></textarea>		<!-- Le message que tu souhaites envoyé -->
 				</div>
-				</br>
+				<br />
 				<div>
-					<button type="submit">Envoyer</button>
+					<button type="submit">Send</button>																						<!-- Bouton pour envoyé son message -->
 				</div>
 			</form>
+			<br />
 		</div>
 	</body>
 </html>
