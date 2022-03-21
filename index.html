@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Jeu du Boggle</title>
-		<link rel="stylesheet" media="screen" type="text/css" href="../menu.css"/>
+<html lang="en">                                                                                                            <!-- Indique la langue de la page qui est l'anglais -->
+	<head>											
+		<meta charset="utf-8" />																							<!-- Encodage des caractères à destination des navigateurs -->
+		<title>Boggle Game</title>
+		<link rel="stylesheet" media="screen" type="text/css" href="../HTML/STYLES/menu.css"/>								<!-- Fichier de style css "menu.css" -->
 	</head>
-	<body>
-		<h1>BIENVENUE SUR LE JEU DU BOGGLE</h1>
-		<ul class="menu">
-			<li><a href="accueil.html" class="actif">Accueil</a></li>
-			<li><a href="règlesjeu.html">Règles du jeu</a></li>
-			<li><a href="downloadjeu.html">Télécharger le Jeu</a></li>
+	<body>																															
+		<h1>WELCOME TO THE SCRAMBLE GAME</h1>																				
+		<ul class="menu">																									<!-- Menu Général -->
+			<li><a href="accueil.html" class="actif">Home</a></li>															<!-- class="actif" dénonce la page web affiché -->
+			<li><a href="règlesjeu.html">Rules of the game</a></li>
+			<li><a href="downloadjeu.html">Download the Game</a></li>														<!-- Liens vers les différentes pages du sites -->
 			<li><a href="leaderboard.html">Leaderboard</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 		<p>
-			Sur ce site, vous pouvez télécharger le jeu, voir le leaderboard et nous contacter si vous avez des requêtes ! :D
+			On this site you can download the game, see the leaderboard and contact us if you have any queries! :D
+			<br />																											<!-- Saut de page -->
 			<br />
+			<b><u>TUTORIAL :</u></b>																						<!-- <b> et <u> Caractères en gras et soulignés -->
+			<br />
+			<br />
+			<b>1.</b>
+			 Vous pouvez télécharger le jeu 
+			<a href="leaderboard.html">ICI</a>																				<!-- Redirection vers la page leaderboard.html -->
+			. Dès que vous avez installer le .zip. 
+			<br />
+			<b>2.</b>
+			 Vous n'avez plus qu'à extraite les fichiers du .zip ! 
+			<br />
+			<b>3.</b>
+			 Lancer le main.c. 
+			<br />
+			<b>4.</b>
+			 Vous pouvez maintenant jouer comme l'exemple ci-dessous !
+			<br />
+			<br />
+			Un problème ? Go to 
+			<a href="contact.html">contact.</a>																				<!-- Redirection vers la page contact.html -->							
+			<br />
+			<br />
+			<b><u>LE JEU :</u></b>
+			<br />
+			<video src="TUTO.mp4" width=800  height=560 controls poster="vignette.jpg"></video>								<!-- Insertion d'une vidéo TUTO.mp4 -->
+			<br />
+			<em><b>GOOD GAME TO ALL</b></em>																				<!-- <em> Caractères en italique -->
 		</p>
-		<em>BON JEU A TOUS</em>
+		<p>
+			<img src="../HTML/IMAGES/Logo.png" alt="logo iut" />															<!-- Insertion du logo de l'iut -->
+		</p>
 	</body>
 </html>
